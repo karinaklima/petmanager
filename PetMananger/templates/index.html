@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Lista de Animais</h1>
+    <div id="animais-lista"></div>
+
+    <h2>Adicionar Animal</h2>
+    <form id="add-animal-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+        <label for="especie">Espécie:</label>
+        <input type="text" id="especie" required>
+        <label for="raca">Raça:</label>
+        <input type="text" id="raca">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade">
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
